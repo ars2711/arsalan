@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --white: #eaeaea;
+  --black: #1f1f1f;
+  --dark-black: #131313;
+}
+* {
+  scroll-behavior: smooth;
+}
+body,
+html {
+  margin: 0;
+  font-family: "Catamaran", sans-serif;
+  color: var(--white);
+  background-color: var(--black);
+}
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+nav {
+  height: 6vw;
+  border-bottom-left-radius: 0.7vw;
+  border-bottom-right-radius: 0.7vw;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  text-transform: uppercase;
+}
+nav > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+nav > a:nth-child(1) {
+  justify-self: right;
+  margin-right: auto;
+  margin-left: 2vw;
+}
+nav > a:last-child {
+  margin-right: 2vw !important;
+}
+nav > a:nth-child(n + 2) {
+  margin: 0 0.5vw;
+  padding: 0.7vw 0.7vw;
+  border-radius: 0.7vw;
+  transition: all 0.5s ease-in-out;
+  font-weight: 700;
+}
