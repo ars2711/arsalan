@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="stylesheets/style.css" />
     <link
+      href="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.css"
+      rel="stylesheet"
+    />
+    <link
       rel="icon"
       type="image/x-icon"
       href="https://cdn3.iconfinder.com/data/icons/devices-136/512/Old_Mac-01-512.png"
@@ -32,9 +36,9 @@
     <div class="home2">
       <div>
         <img
-          class="ukiyo"
+          class="thumbnail"
           src="images/CDG_blog_post_image_06-850x412.jpg"
-          alt="Random Coding Glitch Image"
+          alt="image"
         />
       </div>
       <div>
@@ -55,7 +59,73 @@
         </div>
       </div>
     </div>
-    <div class="home2"></div>
+    <div class="home3">
+      <div class="projects-section">
+        <div>Projects</div>
+        <div>
+          <div class="atropos my-atropos">
+            <div class="atropos-scale">
+              <div class="atropos-rotate">
+                <div class="atropos-inner">
+                  <div class="project-display">
+                    <img
+                      src="images/CDG_blog_post_image_06-850x412.jpg"
+                      alt="Blue Coding Image"
+                    />
+                    <p>Project Title</p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Veniam tempora excepturi praesentium aliquam eum numquam
+                      officia alias similique harum deleniti?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="my-atropos">
+            <div class="atropos-scale">
+              <div class="atropos-rotate">
+                <div class="atropos-inner">
+                  <div class="project-display">
+                    <img
+                      src="images/CDG_blog_post_image_06-850x412.jpg"
+                      alt="Blue Coding Image"
+                    />
+                    <p>Project Title</p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Veniam tempora excepturi praesentium aliquam eum numquam
+                      officia alias similique harum deleniti?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="my-atropos">
+            <div class="atropos-scale">
+              <div class="atropos-rotate">
+                <div class="atropos-inner">
+                  <div class="project-display">
+                    <img
+                      src="images/CDG_blog_post_image_06-850x412.jpg"
+                      alt="Blue Coding Image"
+                    />
+                    <p>Project Title</p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Veniam tempora excepturi praesentium aliquam eum numquam
+                      officia alias similique harum deleniti?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <noscript>
       <link
         rel="stylesheet"
@@ -91,6 +161,18 @@
     <script src="https://cdn.jsdelivr.net/npm/ukiyojs@4.0.9/dist/ukiyo.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.js"></script>
     <script src="scripts/script.js"></script>
+    <script>
+      const image = document.getElementsByClassName("thumbnail");
+      new simpleParallax(image);
+    </script>
+    <script>
+      const myAtropos = Atropos({
+        el: ".my-atropos",
+        // rest of parameters
+      });
+    </script>
   </body>
 </html>
