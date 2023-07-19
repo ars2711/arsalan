@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/jquery.magnify.css" />
+    <link rel="stylesheet" href="stylesheets/magnify-bezelless-theme.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.css"
       rel="stylesheet"
@@ -39,8 +41,8 @@
       <div>
         <img
           class="thumbnail"
-          src="images/CDG_blog_post_image_06-850x412.jpg"
-          alt="image"
+          src="images/codingnumerals_blue_high.jpg"
+          alt="Coding Numerals Blue Image"
         />
       </div>
       <div>
@@ -143,7 +145,13 @@
       <div class="projects-section">
         <div><a href="pages/awards.html">Awards</a></div>
         <div>
-          <a href="images/12_gess_award.jpg" target="_blank"
+          <a
+            data-magnify="gallery"
+            data-src=""
+            data-caption="GESS Finalist Awards"
+            data-group="a"
+            href="images/12_gess_award.jpg"
+            target="_blank"
             ><div class="atropos my-atropos">
               <div class="atropos-scale">
                 <div class="atropos-rotate">
@@ -152,6 +160,7 @@
                       <img
                         src="images/12_gess_award.jpg"
                         alt="2022 GESS Finalist Awards Image"
+                        style="filter: brightness(0.8) contrast(1.5)"
                       />
                       <p>GESS Finalist Award</p>
                       <p>
@@ -164,7 +173,13 @@
               </div>
             </div>
           </a>
-          <a href="images/12_mentalhealth_award.jpg" target="_blank"
+          <a
+            data-magnify="gallery"
+            data-src=""
+            data-caption="Mental Health Awareness Awards"
+            data-group="a"
+            href="images/12_mentalhealth_award.jpg"
+            target="_blank"
             ><div class="atropos my-atropos">
               <div class="atropos-scale">
                 <div class="atropos-rotate">
@@ -173,6 +188,7 @@
                       <img
                         src="images/12_mentalhealth_award.jpg"
                         alt="Mental Health Awareness Award Image"
+                        style="filter: brightness(0.8) contrast(1.5)"
                       />
                       <p>Mental Health</p>
                       <p>
@@ -185,7 +201,13 @@
               </div>
             </div>
           </a>
-          <a href="images/11_servicelearning_award.jpg" target="_blank"
+          <a
+            data-magnify="gallery"
+            data-src=""
+            data-caption="Service Learning Award"
+            data-group="a"
+            href="images/11_servicelearning_award.jpg"
+            target="_blank"
             ><div class="atropos my-atropos">
               <div class="atropos-scale">
                 <div class="atropos-rotate">
@@ -194,6 +216,7 @@
                       <img
                         src="images/11_servicelearning_award.jpg"
                         alt="Service Learning Award Image"
+                        style="filter: brightness(0.8) contrast(1.5)"
                       />
                       <p>Service Learning</p>
                       <p>
@@ -247,6 +270,7 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.js"></script>
+    <script src="scripts/jquery.magnify.js"></script>
     <script src="scripts/script.js"></script>
     <script>
       const image = document.getElementsByClassName("thumbnail");

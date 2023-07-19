@@ -4,6 +4,7 @@
   --light-white: #c4c4c4;
   --black: #202020;
   --dark-black: #0d0d0d;
+  --accent: #43a5be;
 }
 * {
   scroll-behavior: smooth;
@@ -50,6 +51,7 @@ body::-webkit-scrollbar-thumb:hover {
 a {
   color: var(--light-white);
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 nav {
   height: 6vw;
@@ -133,7 +135,7 @@ nav > a:nth-child(n + 2):hover {
   }
 }
 div.home1 {
-  width: 99vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   position: relative;
@@ -143,8 +145,8 @@ div.home1 {
   text-shadow: 0 4px 30px rgba(250, 250, 250, 0.475);
 }
 div.home2 {
-  width: 99vw;
-  height: 100vh;
+  width: 100%;
+  height: auto;
   position: relative;
   background-color: var(--dark-black);
   display: grid;
@@ -158,7 +160,7 @@ div.home2 > div {
   flex-direction: column;
   justify-content: center;
   margin: calc(6vw + 2vw) 1vw 1vw 1vw;
-  height: calc(100vh - (6vw + 2vw + 1vw));
+  height: auto;
   font-size: 5vw;
 }
 div.home2 > div > div:nth-child(2) {
@@ -167,9 +169,6 @@ div.home2 > div > div:nth-child(2) {
 }
 div.home2 > div:nth-child(1) {
   align-items: center;
-}
-div.home2 > div > img {
-  width: calc(100% - 6vw) !important;
 }
 div.particles-hider {
   background: rgba(59, 58, 58, 0.2);
@@ -248,8 +247,7 @@ div.home-button:hover {
   color: var(--light-white);
 }
 div.home3 {
-  width: 99vw;
-  height: 100vh;
+  width: 100%;
   position: relative;
   background-color: var(--dark-black);
 }
@@ -303,5 +301,12 @@ div.home3 {
   font-size: 1.5vw;
 }
 .thumbnail {
-  width: calc(100% - 2vw);
+  height: 30vw;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 7vw;
+}
+div.home2 > div > div > a:hover,
+div.home3 > div > div:nth-child(1) > a:hover {
+  color: var(--accent);
 }
