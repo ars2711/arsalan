@@ -20,7 +20,12 @@
   </head>
   <body id="body1">
     <nav>
-      <a href="#">Web Dev</a>
+      <a href="#"
+        ><img
+          src="https://cdn3.iconfinder.com/data/icons/devices-136/512/Old_Mac-01-512.png"
+          alt="loader"
+          style="height: 3vw; filter: grayscale(1)"
+      /></a>
       <a href="#body1">Home</a>
       <a href="#"><span class="material-symbols-rounded"> menu </span></a>
     </nav>
@@ -253,6 +258,7 @@
       <img
         src="https://cdn3.iconfinder.com/data/icons/devices-136/512/Old_Mac-01-512.png"
         class="loader"
+        alt="loader"
       />
       <div id="factDisplay"></div>
     </div>
@@ -273,13 +279,15 @@
     <script src="scripts/jquery.magnify.js"></script>
     <script src="scripts/script.js"></script>
     <script>
-      const image = document.getElementsByClassName("thumbnail");
-      new simpleParallax(image);
+      var image = document.getElementsByClassName("thumbnail");
+      new simpleParallax(image, {
+        overflow: true,
+        delay: 0.6,
+      });
     </script>
     <script>
-      const myAtropos = Atropos({
-        el: ".my-atropos",
-        // rest of parameters
+      var myAtropos = Atropos({
+        el: document.querySelectorAll(".atropos"),
       });
     </script>
   </body>
