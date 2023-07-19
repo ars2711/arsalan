@@ -270,8 +270,8 @@ div.home3 {
 .projects-section > div:nth-child(2) {
   height: auto;
   display: grid;
-  grid-template-columns: 30% 30% 30%;
-  column-gap: 5%;
+  grid-template-columns: 31% 31% 31%;
+  column-gap: 3.5%;
 }
 .project-display {
   height: 90%;

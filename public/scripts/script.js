@@ -16,3 +16,7 @@ new Ukiyo(".ukiyo");
 particlesJS.load("particles-js", "scripts/particles.json", function () {
   console.log("callback - particles.js config loaded");
 });
+
+var myAtropos = Atropos({
+  el: ".atropos",
+});
