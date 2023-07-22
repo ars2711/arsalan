@@ -390,6 +390,12 @@ div.home-button:hover {
 }
 .project-display > p:nth-child(2) {
   font-size: 3vw;
+  transition: all 0.25s ease-in-out;
+}
+.project-display:hover > p:nth-child(2) {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--accent);
+  text-shadow: 0 4px 10px #43a5bee3;
 }
 .project-display > p:nth-child(3) {
   font-size: 1.5vw;
