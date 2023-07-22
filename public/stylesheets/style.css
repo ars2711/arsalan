@@ -51,7 +51,7 @@ body::-webkit-scrollbar-thumb:hover {
 a {
   color: var(--light-white);
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 nav {
   height: 6vw;
@@ -407,13 +407,14 @@ div.home-button:hover {
   border-radius: 0.7vw;
 }
 div.home2 > div > div > a:hover,
-div.home3 > a:hover,
+div.home3 > a:nth-child(1):hover,
 div.home3 > div > div:nth-child(1) > a:hover,
 div.home4 > div > a:hover,
 div.home5 > div > a:hover,
 div.home6 > div > a:hover {
-  color: var(--accent);
-  cursor: pointer;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--accent);
+  text-shadow: 0 4px 10px #43a5be89;
 }
 footer {
   position: absolute;
