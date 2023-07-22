@@ -24,7 +24,7 @@
   display: flex;
   position: fixed;
   z-index: -1;
-  background-color: var(--dark-black);
+  background-color: #000000;
 }
 body,
 html {
@@ -68,7 +68,7 @@ nav {
   position: fixed;
   margin: 1vw;
   z-index: 100;
-  transition: all 0.5s 0.1s ease-in-out;
+  transition: all 0.5s 0.05s ease-in-out;
 }
 nav > a {
   display: flex;
@@ -248,7 +248,17 @@ div.home2 > div:nth-child(1) {
 }
 div.particles-hider {
   background: rgba(59, 58, 58, 0.2);
-  box-shadow: 0 4px 30px rgba(248, 248, 248, 0.215);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    120deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(2, 0, 36, 0.2) 10%,
+    rgba(0, 0, 0, 0.2) 40%,
+    rgba(11, 74, 90, 0.2) 80%,
+    rgba(45, 112, 129, 0.2) 88%,
+    rgba(67, 165, 190, 0.2) 93%
+  );
+  box-shadow: 0 4px 30px rgba(248, 248, 248, 0.308);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   height: 27vw;
@@ -313,6 +323,7 @@ div.home-button {
   -webkit-text-stroke: 1px var(--light-white);
   color: transparent;
   text-shadow: 0 4px 30px rgba(250, 250, 250, 0.148);
+  box-sizing: border-box;
 }
 div.home-button:hover {
   transform: translateY(-0.5vw);
@@ -321,6 +332,9 @@ div.home-button:hover {
   background-color: transparent;
   -webkit-text-stroke: 1px var(--light-white);
   color: var(--light-white);
+  border: 0.1vw solid var(--white);
+  width: calc(100%-0.1vw);
+  height: calc(6vw - 0.1vw);
 }
 .projects-section {
   display: grid;
@@ -353,6 +367,15 @@ div.home-button:hover {
   padding-bottom: 1vw;
   height: auto;
   background: rgba(204, 204, 204, 0.164);
+  background: linear-gradient(
+    140deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(2, 0, 36, 0.2) 10%,
+    rgba(0, 0, 0, 0.2) 40%,
+    rgba(11, 74, 90, 0.2) 77%,
+    rgba(45, 112, 129, 0.2) 80%,
+    rgba(67, 165, 190, 0.2) 93%
+  );
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.215);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -375,7 +398,7 @@ div.home-button:hover {
   height: 30vw;
   width: 100%;
   object-fit: cover;
-  border-radius: 7vw;
+  border-radius: 0.7vw;
 }
 div.home2 > div > div > a:hover,
 div.home3 > a:hover,
@@ -455,7 +478,7 @@ footer {
 }
 .cta-button {
   padding: 2vw 5vw;
-  border-radius: 5vw;
+  border-radius: 1vw;
   font-size: 2vw;
   background-color: #43a5be41;
   transition: all 0.25s ease-in-out;
@@ -470,3 +493,15 @@ footer {
   transform: translateY(-0.25vw);
   box-shadow: 0 4px 30px rgba(248, 248, 248, 0.425);
 }
+/*@media (prefers-color-scheme: light) {
+  :root {
+    --white: #202020;
+    --light-white: #0d0d0d;
+    --black: #eaeaea;
+    --dark-black: #c4c4c4;
+    --accent: #43a5be;
+  }
+  #particles-js {
+    background: var(--black);
+  }
+}*/
