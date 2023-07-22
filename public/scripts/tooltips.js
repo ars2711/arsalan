@@ -1,0 +1,3 @@
+tippy("#home", {
+  content: "Home",
+});
