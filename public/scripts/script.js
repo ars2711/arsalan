@@ -51,3 +51,5 @@ class AtroposComponent extends HTMLElement {
 }
 
 customElements.define("atropos-component", AtroposComponent);
+var rellax = new Rellax(".relax");
+window.frames[1].stop();
