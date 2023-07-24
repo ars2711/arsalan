@@ -51,5 +51,35 @@ class AtroposComponent extends HTMLElement {
 }
 
 customElements.define("atropos-component", AtroposComponent);
+
+var menuButt = document.getElementById("menuButt");
+menuButt.onclick = function () {
+  openMenu();
+};
+var menuText = document.getElementById("menuButton");
+var menu = document.getElementById("menu");
+var navbar = document.getElementById("navbar");
+function openMenu() {
+  if (window.getComputedStyle(menu, null).getPropertyValue("width") === "0px") {
+    menuText.innerHTML = "close";
+    menu.style.width = "260px";
+    navbar.style.width = "calc(97vw - 260px)";
+    navbar.style.marginLeft = "calc(260px + 1vw)";
+  } else {
+    closeMenu();
+  }
+}
+
+function closeMenu() {
+  menuText.innerHTML = "menu";
+  menu.style.width = "0";
+  navbar.style.width = "100%";
+  navbar.style.marginLeft = window
+    .getComputedStyle(navbar, null)
+    .getPropertyValue("marginLeft");
+  navbar.style.marginRight = window
+    .getComputedStyle(navbar, null)
+    .getPropertyValue("marginRight");
+}
 var rellax = new Rellax(".relax");
 window.frames[1].stop();

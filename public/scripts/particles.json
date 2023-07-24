@@ -47,10 +47,10 @@
     },
     "line_linked": {
       "enable": true,
-      "distance": 144.15568814319462,
+      "distance": 144,
       "color": "#43A5BE",
       "opacity": 0.9,
-      "width": 1.1212109077804029
+      "width": 1
     },
     "move": {
       "enable": true,
