@@ -554,10 +554,23 @@ footer {
   font-size: 20vw;
   transition: all 0.5s ease-in-out;
   -webkit-text-stroke: 1px var(--light-white);
-  line-height: 14vw;
   margin: 0;
   text-shadow: #eaeaeab5 0 0 1000px;
   user-select: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.fof-text > p:nth-child(1) {
+  font-size: 20vw;
+  margin: 0;
+  line-height: 14vw;
+}
+.fof-text > p:nth-child(2) {
+  font-size: 4.5vw;
+  margin: 0;
+  line-height: 4.5vw;
 }
 /*@media (prefers-color-scheme: light) {
   :root {
@@ -578,4 +591,14 @@ footer {
   nav > a:nth-child(n + 2) {
     display: block;
   }
+}
+.home1 > span.home-title1 {
+  -webkit-text-stroke: 1px var(--light-white);
+  color: #c4c4c489;
+}
+.home1 > span.home-title1:hover {
+  color: #43a5be89;
+  -webkit-text-stroke: 1px var(--accent);
+  text-shadow: 0 4px 10px #43a5be89;
+  user-select: none;
 }
