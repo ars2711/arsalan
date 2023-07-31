@@ -602,3 +602,6 @@ footer {
   text-shadow: 0 4px 10px #43a5be89;
   user-select: none;
 }
+.titled-stuff {
+  height: calc(100vh - 18vw);
+}
