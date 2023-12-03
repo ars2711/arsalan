@@ -622,8 +622,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 2vw;
+  font-size: 2.2vw;
+  text-align: center;
 }
 .display-logos > div > img {
-  height: 10vw;
-  width: ;
+  max-height: 10vw;
+  max-width: 13vw;
 }
