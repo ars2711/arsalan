@@ -333,6 +333,15 @@ div.particles-hider {
   z-index: 1;
   margin: 0 0 5vw 0;
 }
+.home-title3 {
+  font-size: 5vw;
+  text-transform: uppercase;
+  color: var(--light-white);
+  z-index: 1;
+  display: flex;
+  align-self: flex-start;
+  margin: 2vw 4vw;
+}
 .button-holder {
   display: flex;
   flex-direction: row;
@@ -602,6 +611,19 @@ footer {
   text-shadow: 0 4px 10px #43a5be89;
   user-select: none;
 }
-.titled-stuff {
-  height: calc(100vh - 18vw);
+.display-logos {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  column-gap: 5%;
+  margin: 2vw 4vw;
+  width: 100%;
+}
+.display-logos > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.display-logos > div > img {
+  height: 10vw;
+  width: ;
 }
